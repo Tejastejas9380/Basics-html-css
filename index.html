@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gech Coder</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Gech<span>Coder</span></h1>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero container">
+        <h2>Welcome to Gech Coder</h2>
+        <p>
+          Your source for coding tutorials, project ideas, and developer
+          resources.
+        </p>
+        <a href="#blog" class="btn">Explore Blog</a>
+      </section>
+
+      <section id="blog" class="posts container">
+        <h2>Latest Posts</h2>
+        <article class="post">
+          <h3><a href="#">How to Build a Responsive Navbar</a></h3>
+          <p>
+            Learn step-by-step how to create a mobile-friendly navigation menu
+            using HTML, CSS, and JavaScript.
+          </p>
+        </article>
+        <article class="post">
+          <h3><a href="#">Getting Started with Flexbox</a></h3>
+          <p>
+            Master modern layout techniques with CSS Flexbox to build responsive
+            designs.
+          </p>
+        </article>
+        <!-- Add more posts here -->
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2>Contact Us</h2>
+        <form action="#" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Your message..."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Gech Coder. All rights reserved.</p>
+        <div class="social">
+          <a href="#" aria-label="GitHub">🐙</a>
+          <a href="#" aria-label="LinkedIn">🔗</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile nav toggle
+      const toggleButton = document.querySelector(".nav-toggle");
+      const navMenu = document.querySelector(".site-nav ul");
+
+      toggleButton.addEventListener("click", () => {
+        navMenu.classList.toggle("nav-open");
+      });
+    </script>
+  </body>
+</html>
